@@ -16,9 +16,9 @@ new = malloc(sizeof(listint_t));
 if (!new)
 return (NULL);
 
-new-> = n;
+new->n = n;
 new->next = *head;
 *head = new;
 
-return(new);
+return (new);
 }

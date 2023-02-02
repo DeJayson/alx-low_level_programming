@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 #include <stdio.h>
 
 size_t looped_listint_len(const listint_t *head);
@@ -21,7 +21,7 @@ size_t nodes = 1;
 if (head == NULL || head->next == NULL)
 return (0);
 
-totoise = head->next;
+tortoise = head->next;
 hare = (head->next)->next;
 
 while (hare)
@@ -39,7 +39,7 @@ hare = hare->next;
 tortoise = tortoise->next;
 while (tortoise != hare)
 {
-node++;
+nodes++;
 tortoise = tortoise->next;
 }
 
@@ -75,9 +75,9 @@ head = head->next;
 }
 }
 
-else 
+else
 {
-for (index = 0; index < nodes; inde++)
+for (index = 0; index < nodes; index++)
 {
 printf("[%p] %d\n", (void *)head, head->n);
 head = head->next;
