@@ -34,7 +34,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (ptr == NULL)
 		return (NULL);
+<<<<<<< HEAD
 	_memset(ptr, 0, nmemb * size);
 	
+=======
+	_memset(ptr, 0, nmemb * size)
+
+>>>>>>> 47ad5a40d10719927bf3e52c2db37e1823975f2b
 	return (ptr);
 }
